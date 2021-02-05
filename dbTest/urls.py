@@ -21,5 +21,6 @@ urlpatterns = [
     path('',patientInfo.views.Home),
     path('login', patientInfo.views.login,name="login"),
     path('register', patientInfo.views.register, name="register"),
+    path('patientinfo', patientInfo.views.patientInfo, name="patientinfo"),
     
 ]
