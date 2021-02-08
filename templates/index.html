@@ -1,5 +1,50 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h6>This is homepage</h6>
+
+<div class="jumbotron">
+<div class="btns">
+<a href="{% url 'login' %}">Login</a>
+<a href="{% url 'register' %}">Register</a>
+</div>
+</div>
+
+
+
+
+<style>
+    a{
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        height: 50px;
+        width: 150px;
+        padding: 10px;
+        background-color: tomato;
+        border-radius: 5px;
+        display: inline-block;
+        text-align: center;
+    }
+    a:hover{
+        text-decoration: none;
+        font-size: 19px;
+        color: white;
+        height: 50px;
+        width: 150px;
+        padding: 10px;
+        background-color: green;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .btns{
+        height: 300px;
+        width: 400px;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+</style>
+
+
+
 {% endblock content %}

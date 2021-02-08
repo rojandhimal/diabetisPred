@@ -1,5 +1,4 @@
 
-
 {% extends 'base.html' %}
 
 <!--
@@ -8,18 +7,10 @@ https://codepen.io/k3no/post/learning-by-example-getting-started-with-chart-js
 -->
 
 {% block content %}
-
-<h1>
-    hello {{user}}
-    this is msg=>
-    {{msg}}
-</h1>
-
-
     <div id="bodywrapper" >
     <div class="header" id="navbar">
-      <div id="username">{{user}}</div>
       <div id="logo"></div>
+      <div id="username">{{username.username}}</div>
     </div>
     <div class="row">
       <div class="col-md-2" id="sidebar"></div>
@@ -45,7 +36,7 @@ var mainContainer =  document.getElementById('bodywrapper');
 var sideBar = document.getElementById("sidebar");
 sideBar.style.height="600px";
 sideBar.style.width="300px";
-sideBar.style.backgroundColor="#213131";
+sideBar.style.backgroundColor="red";
 
 
 var navbar = document.getElementById("navbar");
@@ -54,17 +45,12 @@ navbar.style.width="100%";
 navbar.style.backgroundColor="#212121";
 
 var userName =  document.getElementById('username');
-userName.style.float = 'right';
-userName.style.marginRight="30px";
-userName.style.marginTop="10px";
 var logo = document.getElementById("logo");
 logo.style.height='25px';
 logo.style.width="25px";
 logo.style.borderRadius="15px";
 logo.style.backgroundColor="white";
-logo.style.float = 'right';
-logo.style.marginRight="10px";
-logo.style.marginTop="10px";
+logo.style.float = 'left';
 userName.style.color="white";
 
 var canvas = document.getElementById("barChart");

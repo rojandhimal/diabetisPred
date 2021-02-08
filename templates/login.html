@@ -2,11 +2,13 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
     <section class="login-block">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 login-sec">
                     <h2 class="text-center">Login Now</h2>
+                   <h5> {{msg}} </h5>
                     <form class="login-form" action="login" method="GET">
                         <div class="form-group">
                             <label for="exampleInputEmail1" class="text-uppercase">Username</label>
@@ -56,5 +58,10 @@
             </div>
     </section>
 
+    <style>
+        h5{
+            color: red;
+        }
+    </style>
 
     {% endblock content %}
